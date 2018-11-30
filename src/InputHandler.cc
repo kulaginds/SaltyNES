@@ -51,24 +51,24 @@ void InputHandler::poll_for_key_events() {
 	int numberOfKeys;
 	const uint8_t* keystate = SDL_GetKeyboardState(&numberOfKeys);
 
-	_keys[_map[InputHandler::KEY_UP]] =     keystate[SDL_SCANCODE_W];
-	_keys[_map[InputHandler::KEY_DOWN]] =   keystate[SDL_SCANCODE_S];
-	_keys[_map[InputHandler::KEY_RIGHT]] =  keystate[SDL_SCANCODE_D];
-	_keys[_map[InputHandler::KEY_LEFT]] =   keystate[SDL_SCANCODE_A];
+	_keys[_map[InputHandler::KEY_UP]] =     keystate[SDL_SCANCODE_UP];
+	_keys[_map[InputHandler::KEY_DOWN]] =   keystate[SDL_SCANCODE_DOWN];
+	_keys[_map[InputHandler::KEY_RIGHT]] =  keystate[SDL_SCANCODE_RIGHT];
+	_keys[_map[InputHandler::KEY_LEFT]] =   keystate[SDL_SCANCODE_LEFT];
 	_keys[_map[InputHandler::KEY_START]] =  keystate[SDL_SCANCODE_RETURN];
 	_keys[_map[InputHandler::KEY_SELECT]] = keystate[SDL_SCANCODE_RSHIFT];
-	_keys[_map[InputHandler::KEY_B]] =      keystate[SDL_SCANCODE_J];
-	_keys[_map[InputHandler::KEY_A]] =      keystate[SDL_SCANCODE_K];
+	_keys[_map[InputHandler::KEY_B]] =      keystate[SDL_SCANCODE_LSHIFT];
+	_keys[_map[InputHandler::KEY_A]] =      keystate[SDL_SCANCODE_SPACE];
 
 	bool is_using_keyboard = (
-		keystate[SDL_SCANCODE_W] |
-		keystate[SDL_SCANCODE_S] |
-		keystate[SDL_SCANCODE_D] |
-		keystate[SDL_SCANCODE_A] |
+		keystate[SDL_SCANCODE_UP] |
+		keystate[SDL_SCANCODE_DOWN] |
+		keystate[SDL_SCANCODE_RIGHT] |
+		keystate[SDL_SCANCODE_LEFT] |
 		keystate[SDL_SCANCODE_RETURN] |
 		keystate[SDL_SCANCODE_RSHIFT] |
-		keystate[SDL_SCANCODE_J] |
-		keystate[SDL_SCANCODE_K]) != 0;
+		keystate[SDL_SCANCODE_LSHIFT] |
+		keystate[SDL_SCANCODE_SPACE]) != 0;
 
 	// Check for gamepad input
 	if (! is_using_keyboard) {
