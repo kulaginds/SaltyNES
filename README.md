@@ -1,6 +1,6 @@
-Как гласит описание форка:
+Как гласит описание [форка](https://github.com/workhorsy/SaltyNES):
 ```
-A NES emulator in WebAssembly. Try it live:  http://workhorsy.org/SaltyNES/
+A NES emulator in WebAssembly.
 ```
 
 # Требования к сборке
