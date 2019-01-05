@@ -6,6 +6,8 @@ A NES emulator in WebAssembly.
 # Требования к сборке
 cmake 3.4.3 или новее
 
+python 2
+
 SDL2
 
 # Сборка и запуск веб-сервера
