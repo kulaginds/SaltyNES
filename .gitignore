@@ -12,3 +12,6 @@ SaltyNES.wasm
 SaltyNES.wasm.pre
 SaltyNES.wast
 SaltyNES
+
+web/js/SaltyNES.js
+web/js/SaltyNES.wasm

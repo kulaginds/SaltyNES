@@ -1,0 +1,225 @@
+body {
+    background-color: #cc6633;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Utils
+ */
+.hidden {
+    display: none;
+}
+
+/*
+ * Components
+ */
+.cartridge {
+    position: relative;
+    width: 91px;
+    height: 62px;
+    background-image: url('images/cartridge.png');
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.cartridge > .pic {
+    position: absolute;
+    width: 79px;
+    height: 38px;
+    top: 12px;
+    left: 6px;
+    background-repeat: no-repeat;
+}
+
+.cartridge.own > .pic {
+    background-image: url('images/cartridge-pics/own.png');
+}
+
+.cartridge.mario > .pic {
+    background-image: url('images/cartridge-pics/mario.png');
+}
+
+.cartridge.battle-city > .pic {
+    background-image: url('images/cartridge-pics/battle-city.png');
+}
+
+.cartridge.robocop > .pic {
+    background-image: url('images/cartridge-pics/robocop.png');
+}
+
+/*
+ * Blocks
+ */
+.scheme-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.scheme-container > .scheme {
+    margin: 0 auto;
+    width: 1024px;
+    height: 768px;
+    background-image: url('images/scheme.png');
+    background-repeat: no-repeat;
+}
+
+.tv-container {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.png');
+    background-repeat: repeat;
+}
+
+.tv-container > .container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.tv-container > .container > .half-table {
+    background-image: url('images/half-table-top.png');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.tv-container > .container > .half-table > .tv {
+    margin: 0 auto;
+    width: 256px;
+    height: 240px;
+    background-image: url('images/tv.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    padding: 94px 115px 117px 87px;
+}
+
+.tv-container > .container > .half-table > .tv > .screen {
+    width: 256px;
+    height: 240px;
+    background-color: #818181;
+}
+
+
+.carpet-container {
+    padding-bottom: 10px;
+}
+
+.carpet-container > .carpet {
+    margin: 0 auto;
+    position: relative;
+    width: 1024px;
+    height: 838px;
+    background-image: url('images/carpet.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 65px;
+}
+
+.carpet-container > .carpet > .wires {
+    z-index: 0;
+}
+
+.carpet-container > .carpet > .wires > .left {
+    position: absolute;
+    width: 98px;
+    height: 126px;
+    top: 44px;
+    left: 344px;
+    background-image: url('images/wires-dendy-left.png');
+    background-repeat: no-repeat;
+}
+
+.carpet-container > .carpet > .wires > .right {
+    position: absolute;
+    width: 217px;
+    height: 112px;
+    top: 65px;
+    left: 476px;
+    background-image: url('images/wires-dendy-right.png');
+    background-repeat: no-repeat;
+}
+
+.carpet-container > .carpet > .half-table {
+    position: relative;
+    margin: 0 auto;
+    background-image: url('images/half-table-bottom.png');
+    background-repeat: no-repeat;
+    width: 548px;
+    height: 97px;
+    z-index: 1;
+}
+
+.carpet-container > .carpet > .dendy {
+    position: absolute;
+    width: 145px;
+    height: 180px;
+    top: 164px;
+    left: 406px;
+    z-index: 1;
+    background-image: url('images/console.png');
+    background-repeat: no-repeat;
+}
+
+.carpet-container > .carpet > .dendy > .cartridge {
+    position: absolute;
+    top: 2px;
+    left: 26px;
+    height: 56px;
+}
+
+.carpet-container > .carpet > .joystick-container {
+    position: absolute;
+    top: 340px;
+    left: 412px;
+}
+
+.carpet-container > .carpet > .joystick-container > .wires {
+    position: relative;
+    width: 112px;
+    height: 73px;
+    z-index: 0;
+    background-image: url('images/wires-joystick.png');
+    background-repeat: no-repeat;
+}
+
+.carpet-container > .carpet > .joystick-container > .joystick {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    left: -55px;
+    z-index: 1;
+    background-image: url('images/joystick.png');
+    background-repeat: no-repeat;
+    transform: rotate(9deg);
+}
+
+.carpet-container > .carpet > .cartridge-container > .position-1 {
+    top: 160px;
+    left: 160px;
+}
+
+.carpet-container > .carpet > .cartridge-container > .position-2 {
+    top: 124px;
+    left: 669px;
+    transform: rotate(10deg);
+}
+
+.carpet-container > .carpet > .cartridge-container > .position-3 {
+    top: 230px;
+    left: 566px;
+    transform: rotate(-6deg);
+}
+
+.carpet-container > .carpet > .cartridge-container > .position-4 {
+    top: 140px;
+    left: 740px;
+    transform: rotate(4deg);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dendy</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+	<div class="scheme-container hidden" id="scheme">
+		<div class="scheme"></div>
+	</div>
+
+    <div class="tv-container">
+        <div class="container">
+            <div class="half-table">
+                <div class="tv">
+                    <div class="screen">
+                        <canvas id="screen" class="hidden"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carpet-container">
+        <div class="carpet">
+            <div class="wires">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="half-table"></div>
+            <div class="dendy">
+                <div class="cartridge hidden">
+                    <div class="pic"></div>
+                </div>
+            </div>
+            <div class="joystick-container">
+                <div class="wires"></div>
+                <div class="joystick" id="joystick"></div>
+            </div>
+            <div class="cartridge-container">
+                <div class="cartridge position-1 own" id="own"><div class="pic"></div><input type="file" class="hidden" id="fileupload"></div>
+                <div class="cartridge mario position-2" onclick="loadCartridge('mario');"><div class="pic"></div></div>
+                <div class="cartridge battle-city position-3" onclick="loadCartridge('battle-city');"><div class="pic"></div></div>
+                <div class="cartridge robocop position-4" onclick="loadCartridge('robocop');"><div class="pic"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/no_more_jquery.js"></script>
+    <script src="js/setup.js"></script>
+</body>
+</html>

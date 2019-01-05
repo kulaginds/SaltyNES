@@ -28,3 +28,7 @@ fi
 cd $BUILD_DIR
 emcmake cmake .. -DMY_TYPE=$BUILD_TYPE
 make -j 1
+
+cd ..
+cp SaltyNES.* web/js
+sed -i s+SaltyNES.wasm+js/SaltyNES.wasm+ web/js/SaltyNES.js
